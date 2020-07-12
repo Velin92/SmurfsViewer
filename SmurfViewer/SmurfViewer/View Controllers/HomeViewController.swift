@@ -46,13 +46,17 @@ class HomeViewController: UIViewController {
         //Label
         
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
-        lbTitle.text = "View all of your favourite smurfs!"
+        lbTitle.text = "View all of your favourite smurfs! \nAnd shake your device for a little fun, and quite easy to discover easter egg ;)"
+        lbTitle.textAlignment = .center
+        lbTitle.numberOfLines = 0
         lbTitle.font = .systemFont(ofSize: 14, weight: .semibold)
         view.addSubview(lbTitle)
         
         NSLayoutConstraint.activate([
             lbTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            lbTitle.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 10)
+            lbTitle.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 10),
+            lbTitle.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            lbTitle.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
         
         //Date label
