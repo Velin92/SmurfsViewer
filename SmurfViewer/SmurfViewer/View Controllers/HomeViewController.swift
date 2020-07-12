@@ -92,7 +92,7 @@ class HomeViewController: UIViewController {
 
     
     @objc func openViewerButtonTapped() {
-        let smurfViewController = SmurfViewController(rootView: SmurfsView())
+        let smurfViewController = SmurfViewController(rootView: SmurfsListView())
         navigationController?.pushViewController(smurfViewController, animated: true)
     }
     

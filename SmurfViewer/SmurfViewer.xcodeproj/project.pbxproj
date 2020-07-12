@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7BFFDD824BBA2BE0012BFB8 /* SmurfsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD724BBA2BE0012BFB8 /* SmurfsView.swift */; };
+		A7BFFDD824BBA2BE0012BFB8 /* SmurfsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD724BBA2BE0012BFB8 /* SmurfsListView.swift */; };
 		A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */; };
-		A7BFFDDD24BBB3C50012BFB8 /* SmurfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDC24BBB3C50012BFB8 /* SmurfModel.swift */; };
+		A7BFFDDD24BBB3C50012BFB8 /* Smurf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */; };
+		A7BFFDE024BBB4BC0012BFB8 /* SmurfsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */; };
+		A7BFFDE224BBB5620012BFB8 /* SmurfCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */; };
 		E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D52824AE2A91006D520E /* UIViewController+Easter.swift */; };
 		E910D52B24AE2B46006D520E /* Easter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E910D52A24AE2B46006D520E /* Easter.xcassets */; };
 		E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D53024AF2BF3006D520E /* NetworkService.swift */; };
@@ -42,9 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A7BFFDD724BBA2BE0012BFB8 /* SmurfsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsView.swift; sourceTree = "<group>"; };
+		A7BFFDD724BBA2BE0012BFB8 /* SmurfsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsListView.swift; sourceTree = "<group>"; };
 		A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfCellView.swift; sourceTree = "<group>"; };
-		A7BFFDDC24BBB3C50012BFB8 /* SmurfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfModel.swift; sourceTree = "<group>"; };
+		A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smurf.swift; sourceTree = "<group>"; };
+		A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsListViewModel.swift; sourceTree = "<group>"; };
+		A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfCellViewModel.swift; sourceTree = "<group>"; };
 		E910D52824AE2A91006D520E /* UIViewController+Easter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Easter.swift"; sourceTree = "<group>"; };
 		E910D52A24AE2B46006D520E /* Easter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Easter.xcassets; sourceTree = "<group>"; };
 		E910D53024AF2BF3006D520E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -91,7 +95,7 @@
 		A7BFFDD624BBA2A90012BFB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7BFFDD724BBA2BE0012BFB8 /* SmurfsView.swift */,
+				A7BFFDD724BBA2BE0012BFB8 /* SmurfsListView.swift */,
 				A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */,
 			);
 			path = Views;
@@ -100,9 +104,18 @@
 		A7BFFDDB24BBB3B10012BFB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A7BFFDDC24BBB3C50012BFB8 /* SmurfModel.swift */,
+				A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A7BFFDDE24BBB4A40012BFB8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */,
+				A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E910D53E24AF4062006D520E /* Views */ = {
@@ -135,6 +148,7 @@
 		E928B8AF24AE0C4D007AD993 /* SmurfViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A7BFFDDE24BBB4A40012BFB8 /* ViewModels */,
 				A7BFFDDB24BBB3B10012BFB8 /* Models */,
 				A7BFFDD624BBA2A90012BFB8 /* Views */,
 				E910D53424AF2C43006D520E /* Types.swift */,
@@ -318,17 +332,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D2C0CE24AE15D0009DDCA4 /* SmurfViewController.swift in Sources */,
-				A7BFFDDD24BBB3C50012BFB8 /* SmurfModel.swift in Sources */,
+				A7BFFDDD24BBB3C50012BFB8 /* Smurf.swift in Sources */,
 				E928B8B524AE0C4D007AD993 /* HomeViewController.swift in Sources */,
 				E9D2C0D024AE1816009DDCA4 /* DependencyInjection.swift in Sources */,
 				E910D53724AF2C5F006D520E /* Namespaces.swift in Sources */,
 				E9D2C0D324AE189E009DDCA4 /* DateService.swift in Sources */,
+				A7BFFDE224BBB5620012BFB8 /* SmurfCellViewModel.swift in Sources */,
 				E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */,
 				A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */,
-				A7BFFDD824BBA2BE0012BFB8 /* SmurfsView.swift in Sources */,
+				A7BFFDD824BBA2BE0012BFB8 /* SmurfsListView.swift in Sources */,
 				E910D53524AF2C43006D520E /* Types.swift in Sources */,
 				E928B8B124AE0C4D007AD993 /* AppDelegate.swift in Sources */,
 				E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */,
+				A7BFFDE024BBB4BC0012BFB8 /* SmurfsListViewModel.swift in Sources */,
 				E910D53B24AF3441006D520E /* BaconIpsumView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct SmurfCellView: View {
+    
+    
+    
     var body: some View {
         VStack {
             Text("Smurf Name")

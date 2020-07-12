@@ -8,7 +8,10 @@
 
 import SwiftUI
 
-struct SmurfsView: View {
+struct SmurfsListView: View {
+    
+    @ObservedObject var viewModel = SmurfsListViewModel()
+    
     var body: some View {
         List {
                 SmurfCellView()
@@ -17,8 +20,8 @@ struct SmurfsView: View {
     }
 }
 
-struct SmurfsView_Previews: PreviewProvider {
+struct SmurfsListView_Previews: PreviewProvider {
     static var previews: some View {
-        SmurfsView()
+        SmurfsListView()
     }
 }

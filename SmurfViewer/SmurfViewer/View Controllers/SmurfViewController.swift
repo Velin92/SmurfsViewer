@@ -1,5 +1,5 @@
 import UIKit
 import SwiftUI
 
-class SmurfViewController: UIHostingController<SmurfsView> {
+class SmurfViewController: UIHostingController<SmurfsListView> {
 }
