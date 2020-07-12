@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7BFFDD824BBA2BE0012BFB8 /* SmurfsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD724BBA2BE0012BFB8 /* SmurfsView.swift */; };
+		A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */; };
 		E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D52824AE2A91006D520E /* UIViewController+Easter.swift */; };
 		E910D52B24AE2B46006D520E /* Easter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E910D52A24AE2B46006D520E /* Easter.xcassets */; };
 		E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D53024AF2BF3006D520E /* NetworkService.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7BFFDD724BBA2BE0012BFB8 /* SmurfsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsView.swift; sourceTree = "<group>"; };
+		A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfCellView.swift; sourceTree = "<group>"; };
 		E910D52824AE2A91006D520E /* UIViewController+Easter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Easter.swift"; sourceTree = "<group>"; };
 		E910D52A24AE2B46006D520E /* Easter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Easter.xcassets; sourceTree = "<group>"; };
 		E910D53024AF2BF3006D520E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7BFFDD624BBA2A90012BFB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7BFFDD724BBA2BE0012BFB8 /* SmurfsView.swift */,
+				A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E910D53E24AF4062006D520E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 		E928B8AF24AE0C4D007AD993 /* SmurfViewer */ = {
 			isa = PBXGroup;
 			children = (
+				A7BFFDD624BBA2A90012BFB8 /* Views */,
 				E910D53424AF2C43006D520E /* Types.swift */,
 				E910D53624AF2C5F006D520E /* Namespaces.swift */,
 				E9D2C0E224AE1FDF009DDCA4 /* View Controllers */,
@@ -298,6 +312,8 @@
 				E910D53724AF2C5F006D520E /* Namespaces.swift in Sources */,
 				E9D2C0D324AE189E009DDCA4 /* DateService.swift in Sources */,
 				E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */,
+				A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */,
+				A7BFFDD824BBA2BE0012BFB8 /* SmurfsView.swift in Sources */,
 				E910D53524AF2C43006D520E /* Types.swift in Sources */,
 				E928B8B124AE0C4D007AD993 /* AppDelegate.swift in Sources */,
 				E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */,
