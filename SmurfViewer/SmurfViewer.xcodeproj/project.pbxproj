@@ -12,6 +12,7 @@
 		A7BFFDDD24BBB3C50012BFB8 /* Smurf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */; };
 		A7BFFDE024BBB4BC0012BFB8 /* SmurfsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */; };
 		A7BFFDE224BBB5620012BFB8 /* SmurfCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */; };
+		A7BFFDE424BBBB530012BFB8 /* SmurfNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE324BBBB530012BFB8 /* SmurfNetworkService.swift */; };
 		E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D52824AE2A91006D520E /* UIViewController+Easter.swift */; };
 		E910D52B24AE2B46006D520E /* Easter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E910D52A24AE2B46006D520E /* Easter.xcassets */; };
 		E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D53024AF2BF3006D520E /* NetworkService.swift */; };
@@ -49,6 +50,7 @@
 		A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smurf.swift; sourceTree = "<group>"; };
 		A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsListViewModel.swift; sourceTree = "<group>"; };
 		A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfCellViewModel.swift; sourceTree = "<group>"; };
+		A7BFFDE324BBBB530012BFB8 /* SmurfNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfNetworkService.swift; sourceTree = "<group>"; };
 		E910D52824AE2A91006D520E /* UIViewController+Easter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Easter.swift"; sourceTree = "<group>"; };
 		E910D52A24AE2B46006D520E /* Easter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Easter.xcassets; sourceTree = "<group>"; };
 		E910D53024AF2BF3006D520E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				E9D2C0D224AE189E009DDCA4 /* DateService.swift */,
 				E910D53024AF2BF3006D520E /* NetworkService.swift */,
+				A7BFFDE324BBBB530012BFB8 /* SmurfNetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				A7BFFDD824BBA2BE0012BFB8 /* SmurfsListView.swift in Sources */,
 				E910D53524AF2C43006D520E /* Types.swift in Sources */,
 				E928B8B124AE0C4D007AD993 /* AppDelegate.swift in Sources */,
+				A7BFFDE424BBBB530012BFB8 /* SmurfNetworkService.swift in Sources */,
 				E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */,
 				A7BFFDE024BBB4BC0012BFB8 /* SmurfsListViewModel.swift in Sources */,
 				E910D53B24AF3441006D520E /* BaconIpsumView.swift in Sources */,
