@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AEA390FC2B73E46E5F3F787 /* Pods_SmurfViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2023B0EC6BE651056B6EE17C /* Pods_SmurfViewer.framework */; };
 		A7BFFDD824BBA2BE0012BFB8 /* SmurfsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD724BBA2BE0012BFB8 /* SmurfsListView.swift */; };
 		A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */; };
 		A7BFFDDD24BBB3C50012BFB8 /* Smurf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */; };
 		A7BFFDE024BBB4BC0012BFB8 /* SmurfsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */; };
 		A7BFFDE224BBB5620012BFB8 /* SmurfCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */; };
 		A7BFFDE424BBBB530012BFB8 /* SmurfNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE324BBBB530012BFB8 /* SmurfNetworkService.swift */; };
+		A7BFFDE624BBBDAA0012BFB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE524BBBDAA0012BFB8 /* APIRouter.swift */; };
+		A7DBD85424BBC44400F2C651 /* JSONDecoder+decodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */; };
+		B45FF36B161EB5914CC2A91D /* Pods_SmurfViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AF3B6933F686D62EF64D2F /* Pods_SmurfViewerTests.framework */; };
 		E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D52824AE2A91006D520E /* UIViewController+Easter.swift */; };
 		E910D52B24AE2B46006D520E /* Easter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E910D52A24AE2B46006D520E /* Easter.xcassets */; };
 		E910D53124AF2BF3006D520E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D53024AF2BF3006D520E /* NetworkService.swift */; };
@@ -45,12 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2023B0EC6BE651056B6EE17C /* Pods_SmurfViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmurfViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		236EAA37E99C9FFB7155FA4A /* Pods-SmurfViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmurfViewerTests.release.xcconfig"; path = "Target Support Files/Pods-SmurfViewerTests/Pods-SmurfViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		4ADA6DF13C9409663CCBCD69 /* Pods-SmurfViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmurfViewer.debug.xcconfig"; path = "Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		88AF3B6933F686D62EF64D2F /* Pods_SmurfViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmurfViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BFFDD724BBA2BE0012BFB8 /* SmurfsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsListView.swift; sourceTree = "<group>"; };
 		A7BFFDD924BBA68C0012BFB8 /* SmurfCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfCellView.swift; sourceTree = "<group>"; };
 		A7BFFDDC24BBB3C50012BFB8 /* Smurf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smurf.swift; sourceTree = "<group>"; };
 		A7BFFDDF24BBB4BC0012BFB8 /* SmurfsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfsListViewModel.swift; sourceTree = "<group>"; };
 		A7BFFDE124BBB5620012BFB8 /* SmurfCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfCellViewModel.swift; sourceTree = "<group>"; };
 		A7BFFDE324BBBB530012BFB8 /* SmurfNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmurfNetworkService.swift; sourceTree = "<group>"; };
+		A7BFFDE524BBBDAA0012BFB8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decodeResponse.swift"; sourceTree = "<group>"; };
+		B3436755D5D4474F0E131C71 /* Pods-SmurfViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmurfViewer.release.xcconfig"; path = "Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer.release.xcconfig"; sourceTree = "<group>"; };
 		E910D52824AE2A91006D520E /* UIViewController+Easter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Easter.swift"; sourceTree = "<group>"; };
 		E910D52A24AE2B46006D520E /* Easter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Easter.xcassets; sourceTree = "<group>"; };
 		E910D53024AF2BF3006D520E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -74,6 +85,7 @@
 		E9D2C0D824AE1924009DDCA4 /* MockDateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDateService.swift; sourceTree = "<group>"; };
 		E9D2C0DA24AE19FA009DDCA4 /* UnitTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestCase.swift; sourceTree = "<group>"; };
 		E9D2C0DC24AE1AE8009DDCA4 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		ECDC974DDFA322B2C8A6D82B /* Pods-SmurfViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmurfViewerTests.debug.xcconfig"; path = "Target Support Files/Pods-SmurfViewerTests/Pods-SmurfViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AEA390FC2B73E46E5F3F787 /* Pods_SmurfViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +101,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45FF36B161EB5914CC2A91D /* Pods_SmurfViewerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68B17F5421C507ED24593C1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA6DF13C9409663CCBCD69 /* Pods-SmurfViewer.debug.xcconfig */,
+				B3436755D5D4474F0E131C71 /* Pods-SmurfViewer.release.xcconfig */,
+				ECDC974DDFA322B2C8A6D82B /* Pods-SmurfViewerTests.debug.xcconfig */,
+				236EAA37E99C9FFB7155FA4A /* Pods-SmurfViewerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EB2A2F77B5793FACC8434E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2023B0EC6BE651056B6EE17C /* Pods_SmurfViewer.framework */,
+				88AF3B6933F686D62EF64D2F /* Pods_SmurfViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7BFFDD624BBA2A90012BFB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +169,8 @@
 				E910D52A24AE2B46006D520E /* Easter.xcassets */,
 				E928B8C624AE0C51007AD993 /* SmurfViewerTests */,
 				E928B8AE24AE0C4D007AD993 /* Products */,
+				68B17F5421C507ED24593C1C /* Pods */,
+				9EB2A2F77B5793FACC8434E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				E910D52824AE2A91006D520E /* UIViewController+Easter.swift */,
+				A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +232,7 @@
 				E9D2C0D224AE189E009DDCA4 /* DateService.swift */,
 				E910D53024AF2BF3006D520E /* NetworkService.swift */,
 				A7BFFDE324BBBB530012BFB8 /* SmurfNetworkService.swift */,
+				A7BFFDE524BBBDAA0012BFB8 /* APIRouter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -240,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E928B8CC24AE0C51007AD993 /* Build configuration list for PBXNativeTarget "SmurfViewer" */;
 			buildPhases = (
+				4561D03A7DE2BC717DC098DD /* [CP] Check Pods Manifest.lock */,
 				E928B8A924AE0C4D007AD993 /* Sources */,
 				E928B8AA24AE0C4D007AD993 /* Frameworks */,
 				E928B8AB24AE0C4D007AD993 /* Resources */,
+				EB17074438558FD33AB09574 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E928B8CF24AE0C51007AD993 /* Build configuration list for PBXNativeTarget "SmurfViewerTests" */;
 			buildPhases = (
+				5BD1562D638794A19AF03102 /* [CP] Check Pods Manifest.lock */,
 				E928B8BF24AE0C51007AD993 /* Sources */,
 				E928B8C024AE0C51007AD993 /* Frameworks */,
 				E928B8C124AE0C51007AD993 /* Resources */,
+				7C0BB393FB556EF168FBA237 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,6 +371,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4561D03A7DE2BC717DC098DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmurfViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD1562D638794A19AF03102 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmurfViewerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C0BB393FB556EF168FBA237 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmurfViewerTests/Pods-SmurfViewerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmurfViewerTests/Pods-SmurfViewerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmurfViewerTests/Pods-SmurfViewerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB17074438558FD33AB09574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E928B8A924AE0C4D007AD993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -342,7 +465,9 @@
 				E9D2C0D324AE189E009DDCA4 /* DateService.swift in Sources */,
 				A7BFFDE224BBB5620012BFB8 /* SmurfCellViewModel.swift in Sources */,
 				E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */,
+				A7DBD85424BBC44400F2C651 /* JSONDecoder+decodeResponse.swift in Sources */,
 				A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */,
+				A7BFFDE624BBBDAA0012BFB8 /* APIRouter.swift in Sources */,
 				A7BFFDD824BBA2BE0012BFB8 /* SmurfsListView.swift in Sources */,
 				E910D53524AF2C43006D520E /* Types.swift in Sources */,
 				E928B8B124AE0C4D007AD993 /* AppDelegate.swift in Sources */,
@@ -504,7 +629,9 @@
 		};
 		E928B8CD24AE0C51007AD993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ADA6DF13C9409663CCBCD69 /* Pods-SmurfViewer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3888LT2F8;
@@ -522,7 +649,9 @@
 		};
 		E928B8CE24AE0C51007AD993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3436755D5D4474F0E131C71 /* Pods-SmurfViewer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3888LT2F8;
@@ -540,8 +669,9 @@
 		};
 		E928B8D024AE0C51007AD993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDC974DDFA322B2C8A6D82B /* Pods-SmurfViewerTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3888LT2F8;
@@ -562,8 +692,9 @@
 		};
 		E928B8D124AE0C51007AD993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236EAA37E99C9FFB7155FA4A /* Pods-SmurfViewerTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3888LT2F8;

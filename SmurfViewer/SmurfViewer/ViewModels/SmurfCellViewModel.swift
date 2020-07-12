@@ -8,10 +8,15 @@
 
 import Foundation
 
-class SmurfCellViewModel: Identifiable {
+class SmurfCellViewModel: Identifiable, ObservableObject {
     
     let name: String
-    let description: String?
+    private let description: String?
+    
+    var displayedDescription: String {
+        guard let description = self.description else {return "Missing description"}
+        return description
+    }
     
     init?(from model: Smurf) {
         //the name is required to be displayed in the list

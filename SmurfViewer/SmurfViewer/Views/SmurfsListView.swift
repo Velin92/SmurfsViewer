@@ -14,9 +14,15 @@ struct SmurfsListView: View {
     
     var body: some View {
         List {
-                SmurfCellView()
+            ForEach(viewModel.cellViewModels, content: {
+                cellModel in
+                SmurfCellView(viewModel: cellModel)
+            })
         }
         .navigationBarTitle("Smurfs")
+        .onAppear {
+            self.viewModel.fetchSmurfData()
+        }
     }
 }
 

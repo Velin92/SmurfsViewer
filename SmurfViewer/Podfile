@@ -1,0 +1,16 @@
+#Podfile
+use_frameworks!
+
+platform :ios, '13.0'
+
+def sharedPods
+	pod 'Alamofire', '~> 5.2'
+end
+
+target 'SmurfViewer' do
+    sharedPods
+end
+
+target 'SmurfViewerTests' do
+    sharedPods
+end

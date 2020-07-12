@@ -10,11 +10,11 @@ import SwiftUI
 
 struct SmurfCellView: View {
     
-    
+    @ObservedObject var viewModel: SmurfCellViewModel
     
     var body: some View {
         VStack {
-            Text("Smurf Name")
+            Text(viewModel.name)
             Image("VanitySmurf").resizable()
                 .frame(width: 200.0, height: 200.0)
                 .background(Color.clear)
@@ -22,7 +22,7 @@ struct SmurfCellView: View {
                 VStack (alignment: .leading){
                     Text("Description:")
                         .multilineTextAlignment(.leading)
-                    Text("Description Infos")
+                    Text(viewModel.displayedDescription)
                         .multilineTextAlignment(.leading)
                         .padding([.top, .trailing])
                 }
@@ -34,6 +34,6 @@ struct SmurfCellView: View {
 
 struct SmurfCellView_Previews: PreviewProvider {
     static var previews: some View {
-        SmurfCellView()
+        SmurfCellView(viewModel: SmurfCellViewModel(from: Smurf(name: "Vanity", path: "", wikipediaInfo: "Test"))!)
     }
 }
