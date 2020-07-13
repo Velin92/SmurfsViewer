@@ -72,15 +72,12 @@ class SmurfsListViewModel: ObservableObject {
             queue.async { [weak self] in
                 if let path = model.path {
                     self?.networkService.getSmurfImage(for: path) { dataResponse in
-                        guard dataResponse.error != nil || dataResponse.data == nil else {
-                            print(dataResponse.error ?? "No Data")
-                            serviceGroup.leave()
-                            return
-                        }
-                        //because even if structs are thread safe in Swift, operations on elements of a collection are not
-                        //and require to be accessed by only one thread at time
-                        queue.async(group: serviceGroup, flags: .barrier) {
-                            result[index] = dataResponse.data
+                        if dataResponse.error == nil && dataResponse.data != nil {
+                            //because even if structs are thread safe in Swift, operations on elements of a collection are not
+                            //and require to be accessed by only one thread at time
+                            queue.async(group: serviceGroup, flags: .barrier) {
+                                result[index] = dataResponse.data
+                            }
                         }
                         serviceGroup.leave()
                     }

@@ -11,9 +11,6 @@ import Alamofire
 
 protocol SmurfsListService {
     func getSmurfsListcompletion(completion: @escaping (AFResult<SmurfsListResponse>) -> Void)
-}
-
-protocol SmurfImageService {
     func getSmurfImage(for path: String, completion: @escaping (AFDataResponse<Data>) -> Void)
 }
 
@@ -40,9 +37,7 @@ extension SmurfNetworkService: SmurfsListService {
     func getSmurfsListcompletion(completion: @escaping (AFResult<SmurfsListResponse>) -> Void) {
         request(APIRouter.getSmurfsList, completion: completion)
     }
-}
-
-extension SmurfNetworkService: SmurfImageService {
+    
     func getSmurfImage(for path: String, completion: @escaping (AFDataResponse<Data>) -> Void) {
         AF.request(APIRouter.getSmurfImage(path: path)).responseData(completionHandler: completion)
     }
