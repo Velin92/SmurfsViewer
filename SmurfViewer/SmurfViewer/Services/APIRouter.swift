@@ -60,7 +60,6 @@ enum APIRouter: URLRequestConvertible {
         case .getSmurfsList:
             urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         }
-        
         print("GET request url\n: \(String(describing: urlRequest.url?.absoluteString))")
         return urlRequest
     }

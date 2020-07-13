@@ -10,36 +10,91 @@ import Foundation
 
 class SmurfsListViewModel: ObservableObject {
     
-    enum ViewState {
+    enum ExceptionState {
         case empty
         case error
-        case loaded
-        case loading
+        case none
     }
     
     @Published var cellViewModels: [SmurfCellViewModel] = []
-    @Published var state = ViewState.loading
+    @Published var exceptionState = ExceptionState.none
+    @Published var isLoading: Bool = true
     
-    let networkService : SmurfsListService = SmurfNetworkService()
+    
+    var exceptionMessage: String {
+        switch exceptionState {
+        case .empty:
+            return "There are no Smurfs here.\nGargamel maybe ate them all!"
+        case .error:
+            return "Ops! Something went wrong!\nI bet it's Gargamel's fault"
+        default:
+            return ""
+        }
+    }
+    
+    let networkService = SmurfNetworkService()
     
     func fetchSmurfData() {
-        state = .loading
+        isLoading = true
         networkService.getSmurfsListcompletion {[weak self] result in
             switch result {
             case .success(let response):
-                self?.cellViewModels = response.compactMap(SmurfCellViewModel.init)
-                if let viewModels = self?.cellViewModels, !viewModels.isEmpty {
-                    self?.state = .loaded
+                let validModels = response.filter({$0.name != nil})
+                if !validModels.isEmpty {
+                    self?.exceptionState = .none
+                    self?.fetchImages(for: validModels) { [weak self] imageDatas in
+                        precondition(imageDatas.count == validModels.count, "Something is wrong, the image datas and the viewModels do not match")
+                        for i in 0..<validModels.count {
+                            if let cellModel = SmurfCellViewModel(from: validModels[i], with: imageDatas[i]) {
+                                self?.cellViewModels.append(cellModel)
+                            }
+                        }
+                        self?.isLoading = false
+                    }
                 } else {
-                    self?.state = .empty
+                    self?.isLoading = false
+                    self?.exceptionState = .empty
                 }
-                break
             case .failure (let error):
                 print(error)
-                self?.state = .error
-                break
+                self?.isLoading = false
+                self?.exceptionState = .error
             }
         }
     }
     
+    func fetchImages(for models: [Smurf], completion: @escaping ([Data?])->Void) {
+        let queue = DispatchQueue.init(label: "ImagesQueue", qos: .background, attributes: .concurrent)
+        let serviceGroup = DispatchGroup()
+        var result: [Data?] = [Data?].init(repeating: nil, count: models.count)
+        for (index, model) in models.enumerated() {
+            serviceGroup.enter()
+            queue.async { [weak self] in
+                if let path = model.path {
+                    self?.networkService.getSmurfImage(for: path) { dataResponse in
+                        guard dataResponse.error != nil || dataResponse.data == nil else {
+                            print(dataResponse.error ?? "No Data")
+                            serviceGroup.leave()
+                            return
+                        }
+                        //because even if structs are thread safe in Swift, operations on elements of a collection are not
+                        //and require to be accessed by only one thread at time
+                        queue.async(group: serviceGroup, flags: .barrier) {
+                            result[index] = dataResponse.data
+                        }
+                        serviceGroup.leave()
+                    }
+                } else {
+                    serviceGroup.leave()
+                }
+            }
+        }
+        serviceGroup.notify(queue: DispatchQueue.main) {
+            completion(result)
+        }
+    }
+    
+    deinit {
+        print("*SmurfsListViewModel deinit called*")
+    }
 }

@@ -10,12 +10,12 @@ import SwiftUI
 
 struct SmurfCellView: View {
     
-    @ObservedObject var viewModel: SmurfCellViewModel
+    var viewModel: SmurfCellViewModel
     
     var body: some View {
         VStack {
             Text(viewModel.name)
-            Image("VanitySmurf").resizable()
+            Image(uiImage: UIImage(data: viewModel.displayedImageData) ?? UIImage()).resizable()
                 .frame(width: 200.0, height: 200.0)
                 .background(Color.clear)
             HStack {
@@ -34,6 +34,6 @@ struct SmurfCellView: View {
 
 struct SmurfCellView_Previews: PreviewProvider {
     static var previews: some View {
-        SmurfCellView(viewModel: SmurfCellViewModel(from: Smurf(name: "Vanity", path: "", wikipediaInfo: "Test"))!)
+        SmurfCellView(viewModel: SmurfCellViewModel(from: Smurf(name: "Vanity", path: "", wikipediaInfo: "Test"), with: nil)!)
     }
 }

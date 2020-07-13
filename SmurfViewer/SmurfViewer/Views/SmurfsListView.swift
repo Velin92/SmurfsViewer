@@ -13,11 +13,20 @@ struct SmurfsListView: View {
     @ObservedObject var viewModel = SmurfsListViewModel()
     
     var body: some View {
-        List {
-            ForEach(viewModel.cellViewModels, content: {
-                cellModel in
-                SmurfCellView(viewModel: cellModel)
-            })
+        LoadingView<ZStack>(isShowing: $viewModel.isLoading) {
+            ZStack {
+                if self.viewModel.exceptionState == .none {
+                    List {
+                        ForEach(self.viewModel.cellViewModels, content: {
+                            cellModel in
+                            SmurfCellView(viewModel: cellModel)
+                        })
+                    }
+                } else  {
+                    Text(self.viewModel.exceptionMessage)
+                        .multilineTextAlignment(.center)
+                }
+            }
         }
         .navigationBarTitle("Smurfs")
         .onAppear {
