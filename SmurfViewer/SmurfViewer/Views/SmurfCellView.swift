@@ -15,7 +15,7 @@ struct SmurfCellView: View {
     var body: some View {
         VStack {
             Text(viewModel.name)
-            Image(uiImage: UIImage(data: viewModel.displayedImageData) ?? UIImage()).resizable()
+            Image(uiImage: (UIImage(data: viewModel.imageData) ?? UIImage(named: "Gargamel")!)).resizable()
                 .frame(width: 200.0, height: 200.0)
                 .background(Color.clear)
             HStack {

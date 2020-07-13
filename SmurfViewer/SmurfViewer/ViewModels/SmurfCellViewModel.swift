@@ -12,16 +12,11 @@ class SmurfCellViewModel: Identifiable {
     
     let name: String
     private let description: String?
-    private let imageData: Data?
+    let imageData: Data?
     
     var displayedDescription: String {
         guard let description = self.description else {return "Missing description"}
         return description
-    }
-    
-    var displayedImageData: Data {
-        guard let imageData = self.imageData else {return Data()}
-        return imageData
     }
     
     init?(from model: Smurf, with imageData: Data?) {

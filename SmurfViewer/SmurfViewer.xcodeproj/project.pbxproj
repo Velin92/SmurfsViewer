@@ -17,6 +17,7 @@
 		A7BFFDE624BBBDAA0012BFB8 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFFDE524BBBDAA0012BFB8 /* APIRouter.swift */; };
 		A7DBD85424BBC44400F2C651 /* JSONDecoder+decodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */; };
 		A7DBD85624BBD4B000F2C651 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85524BBD4B000F2C651 /* LoadingView.swift */; };
+		A7DBD85824BBF6AE00F2C651 /* UIImage+convenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85724BBF6AE00F2C651 /* UIImage+convenienceInit.swift */; };
 		B45FF36B161EB5914CC2A91D /* Pods_SmurfViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AF3B6933F686D62EF64D2F /* Pods_SmurfViewerTests.framework */; };
 		E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D52824AE2A91006D520E /* UIViewController+Easter.swift */; };
 		E910D52B24AE2B46006D520E /* Easter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E910D52A24AE2B46006D520E /* Easter.xcassets */; };
@@ -63,6 +64,7 @@
 		A7BFFDE524BBBDAA0012BFB8 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decodeResponse.swift"; sourceTree = "<group>"; };
 		A7DBD85524BBD4B000F2C651 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A7DBD85724BBF6AE00F2C651 /* UIImage+convenienceInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+convenienceInit.swift"; sourceTree = "<group>"; };
 		B3436755D5D4474F0E131C71 /* Pods-SmurfViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmurfViewer.release.xcconfig"; path = "Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer.release.xcconfig"; sourceTree = "<group>"; };
 		E910D52824AE2A91006D520E /* UIViewController+Easter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Easter.swift"; sourceTree = "<group>"; };
 		E910D52A24AE2B46006D520E /* Easter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Easter.xcassets; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			children = (
 				E910D52824AE2A91006D520E /* UIViewController+Easter.swift */,
 				A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */,
+				A7DBD85724BBF6AE00F2C651 /* UIImage+convenienceInit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				E910D53724AF2C5F006D520E /* Namespaces.swift in Sources */,
 				E9D2C0D324AE189E009DDCA4 /* DateService.swift in Sources */,
 				A7BFFDE224BBB5620012BFB8 /* SmurfCellViewModel.swift in Sources */,
+				A7DBD85824BBF6AE00F2C651 /* UIImage+convenienceInit.swift in Sources */,
 				E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */,
 				A7DBD85424BBC44400F2C651 /* JSONDecoder+decodeResponse.swift in Sources */,
 				A7BFFDDA24BBA68C0012BFB8 /* SmurfCellView.swift in Sources */,
