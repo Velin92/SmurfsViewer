@@ -32,14 +32,14 @@ class SmurfsListViewModel: ObservableObject {
         }
     }
     
-    let networkService = SmurfNetworkService()
+    var networkService: SmurfsListService = SmurfNetworkService()
     
     func fetchSmurfData() {
         isLoading = true
         networkService.getSmurfsListcompletion {[weak self] result in
             switch result {
             case .success(let response):
-                let validModels = response.filter({$0.name != nil})
+                let validModels = response.filter({$0.name != nil && !$0.name!.isEmpty})
                 if !validModels.isEmpty {
                     self?.exceptionState = .none
                     self?.fetchImages(for: validModels) { [weak self] imageDatas in

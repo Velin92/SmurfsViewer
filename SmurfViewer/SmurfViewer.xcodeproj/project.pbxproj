@@ -18,6 +18,8 @@
 		A7DBD85424BBC44400F2C651 /* JSONDecoder+decodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */; };
 		A7DBD85624BBD4B000F2C651 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85524BBD4B000F2C651 /* LoadingView.swift */; };
 		A7DBD85824BBF6AE00F2C651 /* UIImage+convenienceInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85724BBF6AE00F2C651 /* UIImage+convenienceInit.swift */; };
+		A7DBD85A24BBF99100F2C651 /* MockedSmurfNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85924BBF99100F2C651 /* MockedSmurfNetworkService.swift */; };
+		A7DBD85C24BBFDCC00F2C651 /* ViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DBD85B24BBFDCC00F2C651 /* ViewModelsTests.swift */; };
 		B45FF36B161EB5914CC2A91D /* Pods_SmurfViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AF3B6933F686D62EF64D2F /* Pods_SmurfViewerTests.framework */; };
 		E910D52924AE2A91006D520E /* UIViewController+Easter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E910D52824AE2A91006D520E /* UIViewController+Easter.swift */; };
 		E910D52B24AE2B46006D520E /* Easter.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E910D52A24AE2B46006D520E /* Easter.xcassets */; };
@@ -65,6 +67,8 @@
 		A7DBD85324BBC44400F2C651 /* JSONDecoder+decodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decodeResponse.swift"; sourceTree = "<group>"; };
 		A7DBD85524BBD4B000F2C651 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A7DBD85724BBF6AE00F2C651 /* UIImage+convenienceInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+convenienceInit.swift"; sourceTree = "<group>"; };
+		A7DBD85924BBF99100F2C651 /* MockedSmurfNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedSmurfNetworkService.swift; sourceTree = "<group>"; };
+		A7DBD85B24BBFDCC00F2C651 /* ViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsTests.swift; sourceTree = "<group>"; };
 		B3436755D5D4474F0E131C71 /* Pods-SmurfViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmurfViewer.release.xcconfig"; path = "Target Support Files/Pods-SmurfViewer/Pods-SmurfViewer.release.xcconfig"; sourceTree = "<group>"; };
 		E910D52824AE2A91006D520E /* UIViewController+Easter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Easter.swift"; sourceTree = "<group>"; };
 		E910D52A24AE2B46006D520E /* Easter.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Easter.xcassets; sourceTree = "<group>"; };
@@ -256,6 +260,8 @@
 			children = (
 				E910D53824AF309E006D520E /* MockNetworkService.swift */,
 				E9D2C0D824AE1924009DDCA4 /* MockDateService.swift */,
+				A7DBD85924BBF99100F2C651 /* MockedSmurfNetworkService.swift */,
+				A7DBD85B24BBFDCC00F2C651 /* ViewModelsTests.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -490,7 +496,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7DBD85A24BBF99100F2C651 /* MockedSmurfNetworkService.swift in Sources */,
 				E9D2C0DB24AE19FA009DDCA4 /* UnitTestCase.swift in Sources */,
+				A7DBD85C24BBFDCC00F2C651 /* ViewModelsTests.swift in Sources */,
 				E9D2C0DD24AE1AE8009DDCA4 /* TestConstants.swift in Sources */,
 				E9D2C0D924AE1924009DDCA4 /* MockDateService.swift in Sources */,
 				E910D53D24AF35DE006D520E /* BaconIpsumViewTests.swift in Sources */,
@@ -681,8 +689,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W3888LT2F8;
+				DEVELOPMENT_TEAM = J3XFT964L7;
 				INFOPLIST_FILE = SmurfViewerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -704,8 +713,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W3888LT2F8;
+				DEVELOPMENT_TEAM = J3XFT964L7;
 				INFOPLIST_FILE = SmurfViewerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
